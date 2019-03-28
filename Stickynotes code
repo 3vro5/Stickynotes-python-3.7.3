@@ -1,0 +1,8 @@
+from tkinter import *
+root = Tk()
+Label(root, text="Welcome to sticky notes!").pack(pady=1, padx=50)
+root.geometry("300x300")
+root["bg"] = "yellow"
+root = Text (height=15, width=50).pack(padx=50, pady=50)
+root = Button(text="New note", command=open("stickynotes.py", "r"))
+root.mainloop()
